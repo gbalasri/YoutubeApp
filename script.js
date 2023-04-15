@@ -19,10 +19,8 @@ const REDIRECT_URI="http://127.0.0.1:5500/index.html"
       let url=`${baseurl}client_id=${clientid}&redirect_uri=${redirect_uri}&response_type=token&scope=${scope}&include_granted_scopes=true&state=${state}`
      //let res=await fetch(url,{ method: 'GET', Headers: {'Access-Control-Allow-Origin':'*'}});
       let res=await fetch(url);
-      console.log(res);
-     //console.log(await res.json());
-      //console.log("hello");
-      //console.log(data.results);
+      console.log(await res.json());
+     
       }
       catch(err)
       {
